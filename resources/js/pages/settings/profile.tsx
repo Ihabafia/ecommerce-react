@@ -7,7 +7,7 @@ import DeleteUser from '@/components/delete-user';
 import HeadingSmall from '@/components/heading-small';
 import InputError from '@/components/input-error';
 import { Button } from '@/components/ui/button';
-import { Input3 } from '@/components/ui/input3';
+import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import AppLayout from '@/layouts/app-layout';
 import SettingsLayout from '@/layouts/settings/layout';
@@ -52,7 +52,7 @@ export default function Profile({ mustVerifyEmail, status }: { mustVerifyEmail: 
                         <div className="grid gap-2">
                             <Label htmlFor="name">Name</Label>
 
-                            <Input3
+                            <Input
                                 id="name"
                                 className="mt-1 block w-full"
                                 value={data.name}
@@ -68,7 +68,7 @@ export default function Profile({ mustVerifyEmail, status }: { mustVerifyEmail: 
                         <div className="grid gap-2">
                             <Label htmlFor="email">Email address</Label>
 
-                            <Input3
+                            <Input
                                 id="email"
                                 type="email"
                                 className="mt-1 block w-full"
